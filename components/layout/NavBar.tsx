@@ -8,9 +8,11 @@ const NavButtons = () => {
   return (
     <div className="w-full h-full flex items-center justify-evenly text-[#f6dcfd] font-oswald font-semibold ">
       <button className={navButtons}>Home</button>
-      <button className={navButtons}>About</button>
+      <button className={navButtons}>Skills</button>
       <button className={navButtons}>Projects</button>
-      <button className={navButtons}>Resources</button>
+      <button className="uppercase tracking-wider hover:scale-105 ease-in-out duration-200 md:flex hidden">
+        Resources
+      </button>
     </div>
   );
 };
