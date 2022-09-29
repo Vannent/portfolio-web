@@ -15,7 +15,9 @@ const Home: NextPage = () => {
         <HomeCP />
         <AboutCP />
         <ProjectsCP />
-        <ResourcesCP />
+        <div className="hidden md:flex">
+          <ResourcesCP />
+        </div>
       </main>
     </div>
   );
