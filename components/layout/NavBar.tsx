@@ -26,7 +26,7 @@ const NavButtons = () => {
     "uppercase tracking-wider hover:scale-105 ease-in-out duration-200 border-[#a049b6] md:flex hidden cursor-pointer";
 
   return (
-    <div className="w-full h-full flex items-center justify-evenly text-[#f6dcfd] font-oswald font-semibold ">
+    <div className="w-full h-full flex items-center justify-evenly text-[#f6dcfd] font-oswald font-semibold z-50">
       <motion.span
         className={activeHome ? activeButtons : navButtons}
         onClick={handleHomeClick}
