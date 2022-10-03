@@ -55,7 +55,7 @@ const Resources: FC = () => {
     {
       id: 7,
       name: "",
-      pic: "https://www.massapply.com/static/media/tribaja.6d174f32.png",
+      pic: "https://softr-prod.imgix.net/applications/d337eafb-ee5f-442e-a9d5-e04974d9c119/assets/6d8cb477-d007-4807-8a1e-9aaaa4ef6e27.png",
       link: "https://www.tribaja.co/",
       width: "150",
     },
