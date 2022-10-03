@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React, { FC } from "react";
+import { useStateContext } from "../../context/StateContext";
 
 const Resources: FC = () => {
+  const { resourcesRef } = useStateContext();
   const resourcesList = [
     {
       id: 0,
@@ -61,7 +63,11 @@ const Resources: FC = () => {
     },
   ];
   return (
-    <div id="resources" className="md:flex hidden items-center justify-center">
+    <div
+      id="resources"
+      ref={resourcesRef}
+      className="md:flex hidden items-center justify-center"
+    >
       <div className="h-full w-full mx-3 md:mx-10 lg:mx-32 xl:mx-72 flex items-center justify-center">
         <div className=" flex items-center justify-center flex-wrap h-3/5">
           {resourcesList.map((resource) => (

@@ -1,6 +1,8 @@
 import React from "react";
+import { useStateContext } from "../../context/StateContext";
 
 const About = () => {
+  const { aboutRef } = useStateContext();
   const skillStyle =
     "h-[30] w-[30] lg:h-[150px] lg:w-[100px] 2xl:w-[150px]  flex flex-col justify-center items-center text-[#f6dcfd] font-oswald uppercase text-sm rounded rounded-Xl";
   const skillStyleHide =
@@ -8,7 +10,7 @@ const About = () => {
   const skillGroup = "flex gap-10 flex-wrap";
 
   return (
-    <div id="about" className="flex items-center justify-center">
+    <div id="about" ref={aboutRef} className="flex items-center justify-center">
       <div className="h-full w-full mx-3 md:mx-10 lg:mx-32 xl:mx-72 flex items-center justify-center flex-col gap-10">
         <div className="flex flex-col xl:gap-5">
           <h1 className="text-4xl font-oswald font-bold uppercase self-center text-[#a049b6]">
@@ -32,7 +34,7 @@ const About = () => {
             things really work.
           </p>
         </div>
-        <div className="flex flex-col xl:gap-5">
+        <div className="flex-col xl:gap-5 md:flex hidden">
           <div className="text-4xl font-oswald font-bold text-[#a049b6] uppercase self-center">
             What I do
           </div>

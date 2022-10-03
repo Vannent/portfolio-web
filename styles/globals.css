@@ -62,3 +62,9 @@ a {
 .projectImg {
   border-radius: 10px;
 }
+
+#active {
+  border-bottom: 4px solid $accent;
+  transition: 0.2s ease-in-out;
+  background: black;
+}

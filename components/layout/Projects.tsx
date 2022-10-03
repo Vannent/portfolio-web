@@ -3,8 +3,10 @@ import React from "react";
 import Bookerei from "../../assets/bookerei.png";
 import Chatter from "../../assets/chatter.png";
 import Searchio from "../../assets/searchio.png";
+import { useStateContext } from "../../context/StateContext";
 
 const Projects = () => {
+  const { projectsRef } = useStateContext();
   const projectList = [
     {
       id: 0,
@@ -37,6 +39,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
+      ref={projectsRef}
       className="flex items-center justify-center h-[100vh] overflow-scroll"
     >
       <div className="h-full w-full mx-3 md:mx-10 lg:mx-32 xl:mx-72 flex items-center justify-center">
