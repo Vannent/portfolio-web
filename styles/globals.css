@@ -28,11 +28,17 @@ a {
 
 #home,
 #about,
-#projects,
 #resources {
   flex: none;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+
+#projects {
+  flex: none;
+  width: 100vw;
   display: flex;
   scroll-snap-align: start;
 }
@@ -51,4 +57,8 @@ a {
 #projects {
   background-image: url("../assets/project-bg.png");
   background-size: cover;
+}
+
+.projectImg {
+  border-radius: 10px;
 }
