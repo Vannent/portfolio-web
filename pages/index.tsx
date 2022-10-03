@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { AboutCP, HomeCP, ProjectsCP, ResourcesCP } from "../components";
+import About from "../components/layout/About";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,9 @@ const Home: NextPage = () => {
       </Head>
       <main id="content" className="">
         <HomeCP />
-        <AboutCP />
+        <div className="hidden md:flex">
+          <About />
+        </div>
         <ProjectsCP />
         <div className="hidden md:flex">
           <ResourcesCP />
