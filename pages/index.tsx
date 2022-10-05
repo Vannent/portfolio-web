@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { AboutCP, HomeCP, ProjectsCP, ResourcesCP } from "../components";
 import About from "../components/layout/About";
+import favicon from "../public/favicon.ico";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Roberto Cedeno</title>
         <meta name="description" content="Software Engineer Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
       </Head>
       <main id="content" className="">
         <HomeCP />
