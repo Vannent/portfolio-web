@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Bookerei from "../../assets/bookerei.png";
 import Chatter from "../../assets/chatter.png";
-import Searchio from "../../assets/searchio.png";
+import Stract from "../../assets/stract.png";
 import { useStateContext } from "../../context/StateContext";
 
 const Projects = () => {
@@ -28,11 +28,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      name: "Searchio",
+      name: "Stract",
       description:
-        "A minimal search engine that utilizes Google's API to fetch results when the user searches for images or sites.",
-      pic: Searchio,
-      link: "https://searchioapp.netlify.app/",
+        "A web application that uses OpenAI to generate content for social media posts using words or sentences as a prompt.",
+      pic: Stract,
+      link: "stractapp.netlify.app",
       language: "JavaScript",
     },
   ];
