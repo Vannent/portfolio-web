@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        oswald: ["Oswald", "sans-serif"],
-        lato: ["Lato", "sans-serif"],
+        playfair: ["Playfair Display", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        robcon: ["Roboto Condensed", "sans-serif"],
       },
     },
   },

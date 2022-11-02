@@ -1,28 +1,23 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { AboutCP, HomeCP, ProjectsCP, ResourcesCP } from "../components";
-import About from "../components/layout/About";
-import favicon from "../public/favicon.ico";
+import { AboutCP, ContactCP, HomeCP, ProjectsCP } from "../components/pages";
 
 const Home: NextPage = () => {
+  const testFunc = () => {
+    console.log("1");
+  };
   return (
-    <div id="container">
+    <div id="content" className="h-full w-full">
       <Head>
         <title>Roberto Cedeno</title>
-        <meta name="description" content="Software Engineer Portfolio" />
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Roberto Cedeno Portfolio" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main id="content" className="">
-        <HomeCP />
-        <div className="hidden md:flex">
-          <About />
-        </div>
-        <ProjectsCP />
-        <div className="hidden md:flex">
-          <ResourcesCP />
-        </div>
-      </main>
+      <HomeCP />
+      <AboutCP />
+      <ProjectsCP />
+      <ContactCP />
     </div>
   );
 };
